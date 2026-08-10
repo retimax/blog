@@ -1,0 +1,301 @@
+/* === FUENTE === */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+
+/* === BASE GLOBAL === */
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 0.4rem !important;
+}
+
+.intro-header {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.navbar-brand img {
+  display: none;
+}
+
+.navbar-brand::after {
+  content: "r0lk444";
+  font-family: "Fira Code", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* === INDEX === */
+.page-heading {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-heading h1::after {
+  content: "red team · malware development";
+  display: block;
+  font-family: "Fira Code", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-top: 0.4rem;
+}
+
+.post-title a:hover {
+  transition: color 0.2s ease;
+}
+
+.container[role="main"] {
+  max-width: 51rem !important;
+}
+
+code {
+  font-family: "Fira Code", monospace;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+article img {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+/* ============================================
+   DARK MODE
+   ============================================ */
+body[data-dark-theme="true"] {
+  background-color: #0d0d0d;
+}
+
+body[data-dark-theme="true"] header {
+  background-color: #0d0d0d !important;
+}
+
+body[data-dark-theme="true"] .intro-header {
+  background-color: #0d0d0d !important;
+}
+
+body[data-dark-theme="true"] a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+body[data-dark-theme="true"] a:hover {
+  text-decoration: underline;
+}
+
+body[data-dark-theme="true"] .navbar-brand img {
+  display: none;
+}
+
+body[data-dark-theme="true"] .navbar-brand::after {
+  color: #c0c0c0;
+}
+
+body[data-dark-theme="true"] .page-heading {
+  border-bottom: 1px solid #1e1e1e;
+}
+
+body[data-dark-theme="true"] .page-heading h1::after {
+  color: #606060;
+}
+
+body[data-dark-theme="true"] .post-title a:hover {
+  color: #888888;
+}
+
+body[data-dark-theme="true"] strong {
+  color: #c0caf5;
+}
+
+body[data-dark-theme="true"] code {
+  background: #1a1a1a;
+}
+
+body[data-dark-theme="true"] article img {
+  border: 1px solid #222;
+}
+
+body[data-dark-theme="true"] .highlight {
+  background: #121212 !important;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 1.2rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  box-shadow: none;
+}
+
+body[data-dark-theme="true"] .highlight pre,
+body[data-dark-theme="true"] .highlight code,
+body[data-dark-theme="true"] .highlight pre code {
+  background: #121212 !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  border: none;
+  box-shadow: none;
+}
+
+body[data-dark-theme="true"] .highlight span { color: #c0caf5 !important; }
+body[data-dark-theme="true"] .highlight .k,
+body[data-dark-theme="true"] .highlight .kd,
+body[data-dark-theme="true"] .highlight .kn,
+body[data-dark-theme="true"] .highlight .kp,
+body[data-dark-theme="true"] .highlight .kr,
+body[data-dark-theme="true"] .highlight .kt { color: #bb9af7 !important; font-weight: 500; }
+body[data-dark-theme="true"] .highlight .s,
+body[data-dark-theme="true"] .highlight .s1,
+body[data-dark-theme="true"] .highlight .s2,
+body[data-dark-theme="true"] .highlight .sb,
+body[data-dark-theme="true"] .highlight .se,
+body[data-dark-theme="true"] .highlight .si,
+body[data-dark-theme="true"] .highlight .sx,
+body[data-dark-theme="true"] .highlight .sr { color: #9ece6a !important; }
+body[data-dark-theme="true"] .highlight .c,
+body[data-dark-theme="true"] .highlight .c1,
+body[data-dark-theme="true"] .highlight .cm,
+body[data-dark-theme="true"] .highlight .cs,
+body[data-dark-theme="true"] .highlight .ch { color: #565f89 !important; font-style: italic; }
+body[data-dark-theme="true"] .highlight .nb,
+body[data-dark-theme="true"] .highlight .bp { color: #7dcfff !important; }
+body[data-dark-theme="true"] .highlight .nf { color: #7aa2f7 !important; }
+body[data-dark-theme="true"] .highlight .nc { color: #c0caf5 !important; font-weight: 500; }
+body[data-dark-theme="true"] .highlight .mi,
+body[data-dark-theme="true"] .highlight .mf,
+body[data-dark-theme="true"] .highlight .mh { color: #ff9e64 !important; }
+body[data-dark-theme="true"] .highlight .o,
+body[data-dark-theme="true"] .highlight .ow { color: #89ddff !important; }
+body[data-dark-theme="true"] .highlight .p { color: #a9b1d6 !important; }
+body[data-dark-theme="true"] .highlight .n,
+body[data-dark-theme="true"] .highlight .nx,
+body[data-dark-theme="true"] .highlight .na { color: #c0caf5 !important; }
+body[data-dark-theme="true"] .highlight .nd { color: #e0af68 !important; }
+body[data-dark-theme="true"] .highlight .kc { color: #ff9e64 !important; }
+
+/* ============================================
+   LIGHT MODE
+   ============================================ */
+body[data-dark-theme="false"] {
+  background-color: #f5f5f0;
+}
+
+body[data-dark-theme="false"] header {
+  background-color: #f5f5f0 !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body[data-dark-theme="false"] .intro-header {
+  background-color: #f5f5f0 !important;
+}
+
+body[data-dark-theme="false"] a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+body[data-dark-theme="false"] a:hover {
+  color: #555555;
+  text-decoration: underline;
+}
+
+body[data-dark-theme="false"] .navbar-brand img {
+  display: block;
+  filter: invert(1) opacity(0.7);
+}
+
+body[data-dark-theme="false"] .navbar-brand::after {
+  color: #1a1a1a;
+}
+
+body[data-dark-theme="false"] .page-heading {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+body[data-dark-theme="false"] .page-heading h1::after {
+  color: #999999;
+}
+
+body[data-dark-theme="false"] .post-title a:hover {
+  color: #555555;
+}
+
+body[data-dark-theme="false"] strong {
+  color: #1a1a1a;
+}
+
+body[data-dark-theme="false"] code {
+  background: #ebebeb;
+  color: #2a2a2a;
+}
+
+body[data-dark-theme="false"] article img {
+  border: 1px solid #ddd;
+}
+
+body[data-dark-theme="false"] .highlight {
+  background: #f0f0ec !important;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.2rem;
+  font-family: "Fira Code", monospace;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  box-shadow: none;
+}
+
+body[data-dark-theme="false"] .highlight pre,
+body[data-dark-theme="false"] .highlight code,
+body[data-dark-theme="false"] .highlight pre code {
+  background: #f0f0ec !important;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  border: none;
+  box-shadow: none;
+}
+
+body[data-dark-theme="false"] .highlight span { color: #24292e !important; }
+body[data-dark-theme="false"] .highlight .k,
+body[data-dark-theme="false"] .highlight .kd,
+body[data-dark-theme="false"] .highlight .kn,
+body[data-dark-theme="false"] .highlight .kp,
+body[data-dark-theme="false"] .highlight .kr,
+body[data-dark-theme="false"] .highlight .kt { color: #d73a49 !important; font-weight: 500; }
+body[data-dark-theme="false"] .highlight .s,
+body[data-dark-theme="false"] .highlight .s1,
+body[data-dark-theme="false"] .highlight .s2,
+body[data-dark-theme="false"] .highlight .sb,
+body[data-dark-theme="false"] .highlight .se,
+body[data-dark-theme="false"] .highlight .si,
+body[data-dark-theme="false"] .highlight .sx,
+body[data-dark-theme="false"] .highlight .sr { color: #032f62 !important; }
+body[data-dark-theme="false"] .highlight .c,
+body[data-dark-theme="false"] .highlight .c1,
+body[data-dark-theme="false"] .highlight .cm,
+body[data-dark-theme="false"] .highlight .cs,
+body[data-dark-theme="false"] .highlight .ch { color: #6a737d !important; font-style: italic; }
+body[data-dark-theme="false"] .highlight .nb,
+body[data-dark-theme="false"] .highlight .bp { color: #005cc5 !important; }
+body[data-dark-theme="false"] .highlight .nf { color: #6f42c1 !important; }
+body[data-dark-theme="false"] .highlight .nc { color: #6f42c1 !important; font-weight: 500; }
+body[data-dark-theme="false"] .highlight .mi,
+body[data-dark-theme="false"] .highlight .mf,
+body[data-dark-theme="false"] .highlight .mh { color: #005cc5 !important; }
+body[data-dark-theme="false"] .highlight .o,
+body[data-dark-theme="false"] .highlight .ow { color: #d73a49 !important; }
+body[data-dark-theme="false"] .highlight .p { color: #24292e !important; }
+body[data-dark-theme="false"] .highlight .n,
+body[data-dark-theme="false"] .highlight .nx,
+body[data-dark-theme="false"] .highlight .na { color: #24292e !important; }
+body[data-dark-theme="false"] .highlight .nd { color: #6f42c1 !important; }
+body[data-dark-theme="false"] .highlight .kc { color: #005cc5 !important; }

@@ -1,0 +1,68 @@
+theme = "harbor"
+baseurl = "https://r0lk444.me/"
+title = "r0lk444"
+paginate = 3
+languageCode = "es"
+DefaultContentLanguage = "es"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+[markup]
+  [markup.highlight]
+    style = "monochrome"
+    codeFences = true
+    lineNos = false
+    noClasses = false
+
+[params]
+  showExcerpts = true
+  customCSS = ["css/custom.css"]
+  defaultTheme = "dark"
+
+[params.author]
+  name = "r0lk444"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-user fa-lg"
+  url = "/about/"
+  weight = 1
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "/tags/"
+  weight = 2
+
+# copy paste this block and change for each social media to add how many ever social media
+# acounts/links you want
+[[params.social]]
+  name = "X"
+  url = "https://x.com/NeoRolka"
+  icon = "fab fa-twitter"
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/retimax"
+  icon = "fab fa-github"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/in/karolrivas"
+  icon = "fab fa-linkedin"
+
+[params.logo]
+  url = "icon.png" # static/images/icon.png
+  width = 50
+  height = 50
+  alt = "Logo"
+
+[[params.social]]
+  name = "Discord"
+  url = "https://discord.com/users/270384605390045185"
+  icon = "fab fa-discord"
