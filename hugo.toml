@@ -18,6 +18,7 @@ footnoteReturnLinkContents = "^"
   showExcerpts = true
   customCSS = ["css/custom.css"]
   defaultTheme = "dark"
+  favicon = "/favicon.ico"
 
 [params.author]
   name = "r0lk444"

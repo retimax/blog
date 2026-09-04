@@ -6,7 +6,6 @@
       {
         "id": "a6b8e28dd58faffd",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "4457aa0557436c3e",
@@ -25,12 +24,11 @@
         ]
       },
       {
-        "id": "3c05fae743d841dd",
+        "id": "8117ba4327cf286f",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
-            "id": "505fd5e1102c9b49",
+            "id": "ab6fd59adbbed70b",
             "type": "leaf",
             "state": {
               "type": "hugo-preview-view",
@@ -98,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "28ddc8b560fc916b",
@@ -204,18 +201,26 @@
       "bases:Create new base": false
     }
   },
-  "active": "505fd5e1102c9b49",
+  "active": "4457aa0557436c3e",
   "lastOpenFiles": [
+    "layouts/shortcodes/video.html",
+    "layouts/shortcodes",
+    "content/images/pm-targeted-dll.png",
+    "content/posts/DLL Sideloading.md",
+    "public/videos/HackAndBeerPoC.mp4",
+    "public/videos",
+    "content/videos/HackAndBeerPoC.mp4",
+    "content/videos",
+    "DLL_sideloading_HndB.txt",
+    "recursos.pdf",
     "content/_index.md",
     "content/about.md",
     "content/search.md",
-    "content/posts/DLL Sideloading.md",
     "content/posts/mi-primera-investigacion.md",
     "content/posts/Inyección-de-shellcode-en-procesos.md",
     "content/posts/Fundamentos-de-desarrollo-de-malware.md",
     "content/images/shellcode_injection_flow.png",
     "public/images/pm-targeted-dll.png",
-    "content/images/pm-targeted-dll.png",
     "images.md",
     "content/images/DLL-Sideloading-Execution-Flow(Fortra).png",
     "content/images/pm-example.png",
